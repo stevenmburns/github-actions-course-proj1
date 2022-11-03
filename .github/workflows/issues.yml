@@ -1,0 +1,8 @@
+name: Workflow Triggered by Issues
+on: issues
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo info
+        run: echo ${{ github }}
